@@ -11,3 +11,7 @@ html {
     font-size: 62.5%;
 } */
 
+.product_image{
+    width: 275px;
+    height: 240px;
+}
