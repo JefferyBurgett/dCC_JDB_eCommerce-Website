@@ -4,14 +4,134 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
 } */
 
+
+html {
+    /* box-sizing: inherit; */
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 50;
+}
+
+header {
+    background-color:white;
+    position: relative;
+    padding: 1rem;
+    height: 50px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    row-gap: 50px;
+    
+}
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0.7rem;
+    left: 1rem;
+}
+
+.nav_links {
+    display: inline;
+    margin-left: 0.5rem;  
+}
+.nav_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.logo_wrapper{
+    align-items: center;
+    font-size: small;
+} 
+    
+.logo_wrapper_image{
+    display: inline;
+    width: 25px;    
+}    
+
+.search_bar input[type="text"]{
+    position: absolute;
+    margin-right: 0.5rem;
+    top: 0.7rem;
+}
+
+/* h1 {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+    top: 0.2rem;
+    text-size-adjust: 50px;   
+} */
+
+
+
+/* .header {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+    /* top: 0.7rem;
+    text-size-adjust: 50px;
+} */
+
+
+
+
+
+.home {
+    background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size: cover;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 25px;
+}
+.home_one {
+    display: grid;
+    align-items: baseline;
+}
+.home_two {
+    display: grid;
+    align-items: center;
+}
+
+.about_one_image{
+    width: 200px;
+    height: auto;
+    
+}
+
+.about_two_image{
+    width: 150px;
+    height: auto;
+}
+
+.product_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 65px;
+    row-gap: 70px;
+}
+
 .product_image{
-    width: 275px;
-    height: 240px;
+    width: 200px;
+    height: 180px;
+}
+
+.hr_product{
+    width: 30%;
+    border: 2px solid black;
+    align-self:
+}
+
+.add_to_cart_button{
+    background-color: #bf7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
