@@ -35,16 +35,19 @@ nav ul {
 }
 
 .nav_links {
-    display: inline;
-    margin-left: 0.5rem;  
+    display: inline; 
+    margin-left: 1.0rem;  
 }
+
 .nav_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .logo_wrapper{
     align-items: center;
     font-size: small;
+    
 } 
     
 .logo_wrapper_image{
@@ -53,34 +56,11 @@ nav ul {
 }    
 
 .search_bar input[type="text"]{
-    position: absolute;
-    margin-right: 0.5rem;
-    top: 0.7rem;
+    display: grid;
+    position: relative;
+    left: 5px;
+    top: 20px;
 }
-
-/* h1 {
-    display: block;
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 50%;
-    top: 0.2rem;
-    text-size-adjust: 50px;   
-} */
-
-
-
-/* .header {
-    display: block;
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 50%;
-    /* top: 0.7rem;
-    text-size-adjust: 50px;
-} */
-
-
-
-
 
 .home {
     background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
@@ -93,29 +73,49 @@ nav ul {
 }
 .home_one {
     display: grid;
-    align-items: baseline;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    top: 100px;
+  
 }
 .home_two {
     display: grid;
     align-items: center;
+    position: relative;
+    left: 600px;
+    top: 50px;
 }
 
-.about_one_image{
-    width: 200px;
-    height: auto;
+h2 {
+    position: relative;
+    left: 75px;
+}
+
+.about_container{
+    display: grid;
     
+    
+
+}
+.about_one_image{
+    width: 500px;
+    height: auto;
+
 }
 
 .about_two_image{
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
 .product_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     column-gap: 65px;
     row-gap: 70px;
+    text-decoration: none;
 }
 
 .product_image{
@@ -126,7 +126,7 @@ nav ul {
 .hr_product{
     width: 30%;
     border: 2px solid black;
-    align-self:
+    text-decoration: none;
 }
 
 .add_to_cart_button{
@@ -134,4 +134,14 @@ nav ul {
     color: white;
     font-weight: bold;
     font-size: 12px;
+}
+
+.message_box {
+    width: 700px;
+    height: 200px;
+}
+ 
+.contact_container{
+    justify-content: center;
+
 }

@@ -5,36 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Cara</title>
-    <link rel="stylesheet" href="./styles.css"
-</head>
+    <link rel="stylesheet" href="./styles.css">
+</head>    
  <body>
-    
-    <header>
+    <style>
+        .hr1 {
+        height: 5px;
+        background-color: #707070 ;
+        width: 90%;
+        }
+        .hr2 {
+        height: 5px;
+        background-color: #707070;
+        align-self: baseline;
+        width: 80%;
+        }
+        .about-container {
+        display: grid;
+        grid-auto-columns: min-content;
+        grid-gap: 50px;
+        padding: 50px;
+        }
+        .logo_wrapper {
+            grid-area: 1 / 2 / span 1 / span 1;
+        }
+        .search {
+            grid-area: 1/ 3 / span 1 / span 1;
+        }
+        .home_one {
+            grid-area: 1 / 1 / span 1 /span 1;
+        }
+        .home_two {
+            grid-area: 2 / 2 / span 1 / span 1;
+        }
+        .about1 {
+            grid-area: 2 / 3 / span 3 / span 2;
+        }
+        .about2 {
+            grid-area: 1 / 1 / span 2 / span 2;
+        }
+        .about3 {
+            grid-area: 3 / 1 / span 2 / span 1;
+        }
+        .about4 {
+            grid-area: 3 / 2 / span 1 / span 1;
+        }
+        .div2 {
+            font-size: x-large;
+        }
+        </style>
+   
+   <header>
         <nav class="nav_wrapper">
-            <div>
                 <ul>
                     <li class="nav_links"><a href="#home">HOME</li></a>
                     <li class="nav_links"><a href="#about_us">ABOUT</li></a>
                     <li class="nav_links"><a href="#products">PRODUCTS</li></a>
                     <li class="nav_links"><a href="#contact">CONTACT</li></a>
-                </ul> 
+                </ul>
             </div>
             
             <div class="logo_wrapper">
                 <h1>CARA <img class="logo_wrapper_image" src = "assets/icons8-pottery-96.png" > CARA</h1>
             </div>
 
-            <div>
-            <input class="search_bar" type="text" id="search" name="search" value="">
-            <span><strong>CART (0)</strong></span>
+            <div class="search">
+                <input class="search_bar" type="text" id="search" name="search" value="">
+                <span><strong>CART (0)</strong></span>
             </div>    
-        </nav>
-        
-
+        </nav>   
     </header>
-    <hr>
+
+     <hr class="hr1">
+    
     <main>
-        <section class="home" id="home"
+        <section class="home">
+            <a id="home"></a>
                 <div class="home_one">
                     <p>
                     <strong>CERAMICS</strong><br>
@@ -47,14 +93,17 @@
                     <strong>...FROM THE</strong><br>
                     <strong>GROUND UP</strong>
                     </p>
-                </div> 
+                </div>     
         </section>
-        <section id="about_us">
+        <section class="about_us">
             <h2>ABOUT US</h2>
-            <hr>
+        <hr class='hr2'>
             <div class="about_container">
-                <div class="about"
+
+                <div class="about1">
                     <a><img class="about_one_image" src = "assets/Cylinder_unglazed3_2048x2048.jpg" alt="white cylinder vase with a grass like flower"></a>
+                </div>    
+                <div class="about2">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
@@ -65,8 +114,10 @@
                     </p>
                 </div>
             
-                <div>
+                <div class="about3">
                     <a><img class="about_two_image"  src= "assets/Vase_Dame_2048x2048.jpg" alt="a vase with a dame flower"></a>
+                </div>
+                <div class="about4">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
@@ -83,7 +134,7 @@
             <h3>OUR PRODUCTS</h3>
             <hr>
             <div class="product_container">
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-7HuTGlUfQSo-unsplash.jpg"></a>
                     <br>
                     <strong>MUNDO BOWLS</strong>
@@ -100,7 +151,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/oriento-maVIpNNtmlQ-unsplash.jpg"></a>
                     <br>
                     <strong>NATUREZA VASE</strong>
@@ -117,7 +168,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-bgIO-u4GEfI-unsplash.jpg"></a>
                     <br>
                     <strong>FEIRA BOWLS</strong>
@@ -134,7 +185,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-3uwu5K0RtaE-unsplash.jpg"></a>
                     <br>
                     <strong>NATUREZA POTS</strong>
@@ -151,7 +202,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/linh-le-a0rE64YJDA4-unsplash.jpg"></a>
                     <br>
                     <strong>PEDRA VASE</strong>
@@ -168,7 +219,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
                 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-oiZAQvxTcYQ-unsplash.jpg"></a>
                     <br>
                     <strong>VIAJA POTS</strong>
@@ -185,7 +236,7 @@
                     <span><button class="add_to_cart_button"type="button">ADD TO CART</button></span>
                 </div>
                 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-YA2E3d7a9Wo-unsplash.jpg"></a>
                     <br>
                     <strong>SERVIÇO PLATES</strong>
@@ -202,7 +253,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/oriento-l0ah3UBLppo-unsplash.jpg"></a>
                     <br>
                     <strong>CAMPEÃO VASE</strong>
@@ -219,7 +270,7 @@
                     <span><button class="add_to_cart_button" type="button">ADD TO CART</button></span>
                 </div>
 
-                <div class="product"
+                <div class="product">
                     <a><img class="product_image" src="assets/tom-crew-SITGdvztUdg-unsplash.jpg"></a>
                     <br>
                     <strong>TROCA BOWLS</strong>
@@ -238,20 +289,19 @@
             </div>
         </section>
         <hr>
-        <section id="contact_us">
-            <h4>CONTACT US</h4>
-            <hr>
-            <span><strong>EMAIL</strong></span>
-            <input type="text" id="email" name="email" value="">
-            
+        <section id="contact">
+            <div class="contact_container">
+                <h4>CONTACT US</h4>
+                <hr>
+                <span>EMAIL</span>
+                <input type="text" id="email" name="email" value="">
+                <br>
+                <br>
 
-
-
-
-
-
-
-
+                <span>MESSAGE</span>
+                <input class="message_box" type="text">
+                <input type="submit">
+            </div>
         </section>
      </main>
     <footer>
